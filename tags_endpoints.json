@@ -1,0 +1,34 @@
+[
+  {
+    "name": "pet",
+    "description": "Cet agent est votre assistant personnel pour tout ce qui concerne les animaux de compagnie. Il peut ajouter de nouveaux animaux à la boutique, mettre à jour les informations existantes, et même supprimer des animaux. Besoin de trouver des animaux par statut ou par tags ? Il s'en charge ! Il peut également récupérer un animal spécifique par son ID et télécharger des images. De plus, il met à jour les données des animaux directement dans la boutique grâce à des formulaires.\n",
+    "endpoints": [
+      "/pet/{petId}/uploadImage",
+      "/pet",
+      "/pet/findByStatus",
+      "/pet/findByTags",
+      "/pet/{petId}"
+    ]
+  },
+  {
+    "name": "store",
+    "description": "Cet agent est votre gestionnaire de commandes personnel pour la Petstore. Il s'occupe de suivre l'inventaire des animaux par statut, de passer des commandes pour un animal de compagnie et de retrouver les commandes d'achat par ID. De plus, cet agent peut supprimer les commandes d'achat par ID.\n",
+    "endpoints": [
+      "/store/inventory",
+      "/store/order",
+      "/store/order/{orderId}"
+    ]
+  },
+  {
+    "name": "user",
+    "description": "Cet agent s'occupe de tout ce qui concerne les utilisateurs. Il peut créer de nouveaux utilisateurs, individuellement ou en lots, et les connecter ou déconnecter du système. Il excelle à récupérer les profils d'utilisateurs par leur nom, mettre à jour leurs informations et même supprimer des comptes. En résumé, il gère le cycle de vie complet des utilisateurs au sein du système.\n",
+    "endpoints": [
+      "/user/createWithList",
+      "/user/{username}",
+      "/user/login",
+      "/user/logout",
+      "/user/createWithArray",
+      "/user"
+    ]
+  }
+]
